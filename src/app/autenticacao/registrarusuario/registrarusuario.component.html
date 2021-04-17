@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<body>
+  <div class="divCenter p-fluid">
+    <div>
+      <img [src]="logo" alt="Welcome" width="100%" height="200px">
+    </div>
+    <div class="label">
+      <span class="p-float-label">
+        <input id="usuario" type="text" pInputText required>
+        <label for="usuario">Nome Completo</label>
+      </span>
+    </div>
+    <div class="label">
+      <span class="p-float-label" >
+        <input id="e-mail" type="text" pInputText required>
+        <label for="e-mail">E-mail</label>
+      </span>
+    </div>
+    <div class="label">
+      <span class="p-float-label" >
+        <p-inputMask mask="(99) 99999-9999" id="telefone" ></p-inputMask>
+        <label for="telefone">Telefone</label>
+      </span>
+    </div>
+    <div class="label">
+      <span class="p-float-label" >
+          <input id="senha" type="password" pInputText required>
+          <label for="senha">Senha</label>
+      </span>
+    </div>
+    <div class="label">
+      <span class="p-float-label" >
+          <input id="senha" type="password" pInputText required>
+          <label for="senha">Confirmar Senha</label>
+      </span>
+    </div>
+    
+    <div class="divButton">
+      <a pButton (click)="confirmaRegistro()" class="rmu" label="Continuar"></a>
+    </div>
+  </div>
+
+  <div id="alert" class="alert">
+    <strong>Aviso!</strong> Confirmação de registro enviada para o e-mail!
+  </div>
+
+</body>
+</html>

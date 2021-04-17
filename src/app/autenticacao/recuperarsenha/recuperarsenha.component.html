@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<body>
+  <div class="divCenter">
+    <div>
+      <img [src]="logo" alt="Batman" width="100%" height="200">
+    </div>
+    
+    <div class="divLabel p-float-label">
+        <input id="e-mail" type="text" style="width: 100%;" pInputText>
+        <label for="e-mail">E-mail de Login</label>
+    </div>
+
+    <div class="divButton">
+      <a pButton (click)="senhaRecuperada()" class="p-button-danger button" label="Enviar senha para o e-mail!"></a>
+    </div>
+
+    <div id="alert" class="alert">
+      <strong>Aviso!</strong> Senha recuperada com sucesso!
+    </div>
+  </div>
+
+</body>
+</html>

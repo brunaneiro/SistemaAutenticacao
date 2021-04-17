@@ -1,0 +1,71 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+}
+
+
+.animated_rainbow_1 {
+    position: fixed;
+    text-align: center;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 42px;
+    background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    -webkit-animation: animatedBackground_a 3s linear infinite alternate;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+}
+
+@keyframes animatedBackground_a {
+    0% { background-position: 0 0 }
+    100% { background-position: -500px 0 }
+}
+
+.divCenter{
+    position: fixed;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.divLabel {
+    position: relative;
+    margin-top: 35px;
+    width: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+#usuario, #password {
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    border-color: white;
+    border-width: 2px;
+    width: 300%;
+}
+
+.divButton {
+    position: relative;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    margin-top: 35px;
+    width: 100%;
+    text-decoration: none;
+}

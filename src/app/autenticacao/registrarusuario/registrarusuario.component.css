@@ -1,0 +1,38 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.divCenter{
+    position: fixed;
+    width: 35%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rmu {
+    width: 100%;
+    margin-top: 5%;
+    text-decoration: none;
+}
+
+.label {
+    margin-top: 7%;
+}
+
+
+.alert {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    background-color: rgb(77, 145, 233);
+    color: white;
+}
